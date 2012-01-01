@@ -56,6 +56,7 @@
 - (void)request:(FBRequest *)request didLoad:(id)result{
 
     self.parsedResult = result;
+    [parsedResult retain];
     if ([self.delegate respondsToSelector:@selector(finishedPublishingPost:)]){
         [self.delegate finishedPublishingPost:self];
     }

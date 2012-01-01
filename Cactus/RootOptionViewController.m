@@ -64,6 +64,9 @@
 - (void)viewDidUnload
 {
     [super viewDidUnload];
+    [events release];
+    [birthdayList release];
+    [weather release];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }

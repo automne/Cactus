@@ -360,6 +360,8 @@ id temp_2;
         abort();
     }
     [myBDYear release];
+    //[friend release];
+    //[request release];
 
 }
 
