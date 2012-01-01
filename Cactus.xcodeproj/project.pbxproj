@@ -16,6 +16,8 @@
 		594EBB3714AED81500903D17 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594EBB3514AED81500903D17 /* DetailViewController.xib */; };
 		597984F314ACF1710074B759 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597984F214ACF1710074B759 /* CoreData.framework */; };
 		597984F914ACFA4D0074B759 /* Friends.m in Sources */ = {isa = PBXBuildFile; fileRef = 597984F814ACFA4D0074B759 /* Friends.m */; };
+		59C868A114B08F1A004C7B4B /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C868A014B08F1A004C7B4B /* icon.png */; };
+		59C868A314B08F46004C7B4B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C868A214B08F46004C7B4B /* Default.png */; };
 		59FC6BBD14ACD8AF007B11E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FC6BBC14ACD8AF007B11E1 /* UIKit.framework */; };
 		59FC6BBF14ACD8AF007B11E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FC6BBE14ACD8AF007B11E1 /* Foundation.framework */; };
 		59FC6BC114ACD8AF007B11E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FC6BC014ACD8AF007B11E1 /* CoreGraphics.framework */; };
@@ -97,6 +99,8 @@
 		597984F214ACF1710074B759 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		597984F714ACFA4D0074B759 /* Friends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Friends.h; sourceTree = "<group>"; };
 		597984F814ACFA4D0074B759 /* Friends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Friends.m; sourceTree = "<group>"; };
+		59C868A014B08F1A004C7B4B /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		59C868A214B08F46004C7B4B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		59FC6BB814ACD8AF007B11E1 /* Cactus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cactus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FC6BBC14ACD8AF007B11E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		59FC6BBE14ACD8AF007B11E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -276,6 +280,8 @@
 		59FC6BAD14ACD8AE007B11E1 = {
 			isa = PBXGroup;
 			children = (
+				59C868A214B08F46004C7B4B /* Default.png */,
+				59C868A014B08F1A004C7B4B /* icon.png */,
 				59FC6BC214ACD8AF007B11E1 /* Cactus */,
 				59FC6BE014ACD8AF007B11E1 /* CactusTests */,
 				59FC6BBB14ACD8AF007B11E1 /* Frameworks */,
@@ -583,6 +589,8 @@
 				79E892C314B05E4B00C83D17 /* pic2.png in Resources */,
 				79E892CC14B05E7100C83D17 /* RootOptionViewController.xib in Resources */,
 				5925524814B0894300037139 /* EventViewController.xib in Resources */,
+				59C868A114B08F1A004C7B4B /* icon.png in Resources */,
+				59C868A314B08F46004C7B4B /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
