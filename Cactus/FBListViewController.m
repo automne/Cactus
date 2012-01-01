@@ -8,6 +8,7 @@
 
 #import "FBListViewController.h"
 #import "DetailViewController.h"
+#import "LocalWeatherViewController.h"
 
 NSDate *birthday;
 NSDate *today;
@@ -43,12 +44,21 @@ id temp_2;
 	// Do any additional setup after loading the view, typically from a nib.
     //self.title=@"Hello";
     
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    if (self.managedObjectContext == nil) 
+    { 
+        self.managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext]; 
+    }
+    
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(goBack)];
+    self.navigationItem.leftBarButtonItem = backButton;
     
     UIBarButtonItem *loginButton = [[UIBarButtonItem alloc] initWithTitle:@"Refresh" style:UIBarButtonItemStylePlain target:self action:@selector(login:)];
     self.navigationItem.rightBarButtonItem = loginButton;
     
-    self.title=@"Facebook";
+    [backButton release];
+    [loginButton release];
+    
+    self.title=@"Birthday";
     wrapper=[[FBRequestWrapper alloc] initWithGraphPath:@"me"];
     if(![wrapper.facebook isSessionValid]){
         loginButton.title=@"Login";
@@ -82,6 +92,7 @@ id temp_2;
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -206,6 +217,10 @@ id temp_2;
 
 }
 
+- (void) goBack
+{
+    [self.navigationController popViewControllerAnimated:YES];
+}
 
 /****************************************************************************/
 

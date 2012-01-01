@@ -16,7 +16,7 @@
     Facebook *facebook;
 }
 
--(void) FBLogin;
+- (void) FBLogin;
 - (NSURL *)applicationDocumentsDirectory;
 
 @property (strong, nonatomic) UIWindow *window;

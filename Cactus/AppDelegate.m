@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
 #import "FBListViewController.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
@@ -32,10 +32,12 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-    FBListViewController *viewController=[[[FBListViewController alloc] initWithNibName:@"ViewController" bundle:nil] autorelease];
+    RootViewController *viewController=[[[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil] autorelease];
     self.navigationController=[[[UINavigationController alloc] initWithRootViewController:viewController] autorelease];
     self.navigationController.navigationBar.tintColor=[UIColor blackColor];
-    viewController.managedObjectContext=self.managedObjectContext;
+    FBListViewController *fbController= [[[FBListViewController alloc] initWithNibName:@"FBListViewController" bundle:nil] autorelease];
+    fbController.managedObjectContext=self.managedObjectContext;
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
     self.window.rootViewController=self.navigationController;
     [self.window makeKeyAndVisible];
     

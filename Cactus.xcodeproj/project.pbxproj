@@ -19,7 +19,7 @@
 		59FC6BC914ACD8AF007B11E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FC6BC814ACD8AF007B11E1 /* main.m */; };
 		59FC6BCD14ACD8AF007B11E1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FC6BCC14ACD8AF007B11E1 /* AppDelegate.m */; };
 		59FC6BD014ACD8AF007B11E1 /* FBListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FC6BCF14ACD8AF007B11E1 /* FBListViewController.m */; };
-		59FC6BD314ACD8AF007B11E1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FC6BD114ACD8AF007B11E1 /* ViewController.xib */; };
+		59FC6BD314ACD8AF007B11E1 /* FBListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FC6BD114ACD8AF007B11E1 /* FBListViewController.xib */; };
 		59FC6BDB14ACD8AF007B11E1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FC6BDA14ACD8AF007B11E1 /* SenTestingKit.framework */; };
 		59FC6BDC14ACD8AF007B11E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FC6BBC14ACD8AF007B11E1 /* UIKit.framework */; };
 		59FC6BDD14ACD8AF007B11E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FC6BBE14ACD8AF007B11E1 /* Foundation.framework */; };
@@ -37,6 +37,37 @@
 		59FC6C1414ACD922007B11E1 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FC6C0814ACD922007B11E1 /* SBJsonParser.m */; };
 		59FC6C1514ACD922007B11E1 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FC6C0A14ACD922007B11E1 /* SBJsonWriter.m */; };
 		59FC6C1A14ACD99A007B11E1 /* FBRequestWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FC6C1914ACD999007B11E1 /* FBRequestWrapper.m */; };
+		79E8926D14B0466700C83D17 /* ICB_WeatherConditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8926914B0466700C83D17 /* ICB_WeatherConditions.m */; };
+		79E8926E14B0466700C83D17 /* LocalWeatherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8926B14B0466700C83D17 /* LocalWeatherViewController.m */; };
+		79E8926F14B0466700C83D17 /* LocalWeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E8926C14B0466700C83D17 /* LocalWeatherViewController.xib */; };
+		79E8928E14B0466F00C83D17 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8927414B0466F00C83D17 /* CXMLDocument_CreationExtensions.m */; };
+		79E8928F14B0466F00C83D17 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8927614B0466F00C83D17 /* CXMLNode_CreationExtensions.m */; };
+		79E8929014B0466F00C83D17 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8927814B0466F00C83D17 /* CXMLDocument.m */; };
+		79E8929114B0466F00C83D17 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8927A14B0466F00C83D17 /* CXMLDocument_PrivateExtensions.m */; };
+		79E8929214B0466F00C83D17 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8927C14B0466F00C83D17 /* CXMLElement.m */; };
+		79E8929314B0466F00C83D17 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8927E14B0466F00C83D17 /* CXMLElement_CreationExtensions.m */; };
+		79E8929414B0466F00C83D17 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8928014B0466F00C83D17 /* CXMLElement_ElementTreeExtensions.m */; };
+		79E8929514B0466F00C83D17 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8928214B0466F00C83D17 /* CXMLNamespaceNode.m */; };
+		79E8929614B0466F00C83D17 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8928414B0466F00C83D17 /* CXMLNode.m */; };
+		79E8929714B0466F00C83D17 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8928614B0466F00C83D17 /* CXMLNode_PrivateExtensions.m */; };
+		79E8929814B0466F00C83D17 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8928814B0466F00C83D17 /* CXMLNode_XPathExtensions.m */; };
+		79E8929914B0466F00C83D17 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E8928C14B0466F00C83D17 /* CTidy.m */; };
+		79E8929B14B046BC00C83D17 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E8929A14B046BC00C83D17 /* MapKit.framework */; };
+		79E8929D14B046D700C83D17 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E8929C14B046D700C83D17 /* CoreLocation.framework */; };
+		79E892A114B0508F00C83D17 /* sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892A014B0508F00C83D17 /* sky.png */; };
+		79E892A914B057D900C83D17 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E892A714B057D900C83D17 /* RootViewController.m */; };
+		79E892AA14B057D900C83D17 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E892A814B057D900C83D17 /* RootViewController.xib */; };
+		79E892BB14B05E4B00C83D17 /* background-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892B214B05E4B00C83D17 /* background-1.png */; };
+		79E892BC14B05E4B00C83D17 /* background-4.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892B314B05E4B00C83D17 /* background-4.png */; };
+		79E892BD14B05E4B00C83D17 /* cancel-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892B414B05E4B00C83D17 /* cancel-2.png */; };
+		79E892BE14B05E4B00C83D17 /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892B514B05E4B00C83D17 /* header.png */; };
+		79E892BF14B05E4B00C83D17 /* Item-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892B614B05E4B00C83D17 /* Item-1.png */; };
+		79E892C014B05E4B00C83D17 /* Item-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892B714B05E4B00C83D17 /* Item-2.png */; };
+		79E892C114B05E4B00C83D17 /* Item-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892B814B05E4B00C83D17 /* Item-3.png */; };
+		79E892C214B05E4B00C83D17 /* pic1.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892B914B05E4B00C83D17 /* pic1.png */; };
+		79E892C314B05E4B00C83D17 /* pic2.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E892BA14B05E4B00C83D17 /* pic2.png */; };
+		79E892CB14B05E7100C83D17 /* RootOptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E892C914B05E7100C83D17 /* RootOptionViewController.m */; };
+		79E892CC14B05E7100C83D17 /* RootOptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79E892CA14B05E7100C83D17 /* RootOptionViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,7 +100,7 @@
 		59FC6BCC14ACD8AF007B11E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		59FC6BCE14ACD8AF007B11E1 /* FBListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBListViewController.h; sourceTree = "<group>"; };
 		59FC6BCF14ACD8AF007B11E1 /* FBListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBListViewController.m; sourceTree = "<group>"; };
-		59FC6BD214ACD8AF007B11E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		59FC6BD214ACD8AF007B11E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FBListViewController.xib; sourceTree = "<group>"; };
 		59FC6BD914ACD8AF007B11E1 /* CactusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CactusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59FC6BDA14ACD8AF007B11E1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		59FC6BE214ACD8AF007B11E1 /* CactusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CactusTests-Info.plist"; sourceTree = "<group>"; };
@@ -102,6 +133,55 @@
 		59FC6C0A14ACD922007B11E1 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
 		59FC6C1814ACD999007B11E1 /* FBRequestWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequestWrapper.h; sourceTree = "<group>"; };
 		59FC6C1914ACD999007B11E1 /* FBRequestWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBRequestWrapper.m; sourceTree = "<group>"; };
+		79E8926814B0466700C83D17 /* ICB_WeatherConditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICB_WeatherConditions.h; sourceTree = "<group>"; };
+		79E8926914B0466700C83D17 /* ICB_WeatherConditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICB_WeatherConditions.m; sourceTree = "<group>"; };
+		79E8926A14B0466700C83D17 /* LocalWeatherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalWeatherViewController.h; sourceTree = "<group>"; };
+		79E8926B14B0466700C83D17 /* LocalWeatherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalWeatherViewController.m; sourceTree = "<group>"; };
+		79E8926C14B0466700C83D17 /* LocalWeatherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocalWeatherViewController.xib; sourceTree = "<group>"; };
+		79E8927314B0466F00C83D17 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		79E8927414B0466F00C83D17 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		79E8927514B0466F00C83D17 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		79E8927614B0466F00C83D17 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		79E8927714B0466F00C83D17 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		79E8927814B0466F00C83D17 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		79E8927914B0466F00C83D17 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		79E8927A14B0466F00C83D17 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		79E8927B14B0466F00C83D17 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		79E8927C14B0466F00C83D17 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		79E8927D14B0466F00C83D17 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		79E8927E14B0466F00C83D17 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		79E8927F14B0466F00C83D17 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		79E8928014B0466F00C83D17 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		79E8928114B0466F00C83D17 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		79E8928214B0466F00C83D17 /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		79E8928314B0466F00C83D17 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		79E8928414B0466F00C83D17 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		79E8928514B0466F00C83D17 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		79E8928614B0466F00C83D17 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		79E8928714B0466F00C83D17 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		79E8928814B0466F00C83D17 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		79E8928914B0466F00C83D17 /* LocalWeather_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalWeather_Prefix.pch; sourceTree = "<group>"; };
+		79E8928B14B0466F00C83D17 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		79E8928C14B0466F00C83D17 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		79E8928D14B0466F00C83D17 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		79E8929A14B046BC00C83D17 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		79E8929C14B046D700C83D17 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		79E892A014B0508F00C83D17 /* sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky.png; sourceTree = "<group>"; };
+		79E892A614B057D900C83D17 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		79E892A714B057D900C83D17 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		79E892A814B057D900C83D17 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		79E892B214B05E4B00C83D17 /* background-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-1.png"; sourceTree = "<group>"; };
+		79E892B314B05E4B00C83D17 /* background-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background-4.png"; sourceTree = "<group>"; };
+		79E892B414B05E4B00C83D17 /* cancel-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cancel-2.png"; sourceTree = "<group>"; };
+		79E892B514B05E4B00C83D17 /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
+		79E892B614B05E4B00C83D17 /* Item-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Item-1.png"; sourceTree = "<group>"; };
+		79E892B714B05E4B00C83D17 /* Item-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Item-2.png"; sourceTree = "<group>"; };
+		79E892B814B05E4B00C83D17 /* Item-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Item-3.png"; sourceTree = "<group>"; };
+		79E892B914B05E4B00C83D17 /* pic1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic1.png; sourceTree = "<group>"; };
+		79E892BA14B05E4B00C83D17 /* pic2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic2.png; sourceTree = "<group>"; };
+		79E892C814B05E7100C83D17 /* RootOptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootOptionViewController.h; sourceTree = "<group>"; };
+		79E892C914B05E7100C83D17 /* RootOptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootOptionViewController.m; sourceTree = "<group>"; };
+		79E892CA14B05E7100C83D17 /* RootOptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootOptionViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +189,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E8929D14B046D700C83D17 /* CoreLocation.framework in Frameworks */,
+				79E8929B14B046BC00C83D17 /* MapKit.framework in Frameworks */,
 				597984F314ACF1710074B759 /* CoreData.framework in Frameworks */,
 				59FC6BBD14ACD8AF007B11E1 /* UIKit.framework in Frameworks */,
 				59FC6BBF14ACD8AF007B11E1 /* Foundation.framework in Frameworks */,
@@ -134,7 +216,7 @@
 			children = (
 				59FC6BCE14ACD8AF007B11E1 /* FBListViewController.h */,
 				59FC6BCF14ACD8AF007B11E1 /* FBListViewController.m */,
-				59FC6BD114ACD8AF007B11E1 /* ViewController.xib */,
+				59FC6BD114ACD8AF007B11E1 /* FBListViewController.xib */,
 				594EBB3314AED81500903D17 /* DetailViewController.h */,
 				594EBB3414AED81500903D17 /* DetailViewController.m */,
 				594EBB3514AED81500903D17 /* DetailViewController.xib */,
@@ -161,6 +243,15 @@
 			name = "Data Store";
 			sourceTree = "<group>";
 		};
+		5924B9DA14B00DF900D0D0C7 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				59FC6BCB14ACD8AF007B11E1 /* AppDelegate.h */,
+				59FC6BCC14ACD8AF007B11E1 /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
 		59FC6BAD14ACD8AE007B11E1 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +274,8 @@
 		59FC6BBB14ACD8AF007B11E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79E8929C14B046D700C83D17 /* CoreLocation.framework */,
+				79E8929A14B046BC00C83D17 /* MapKit.framework */,
 				597984F214ACF1710074B759 /* CoreData.framework */,
 				59FC6BBC14ACD8AF007B11E1 /* UIKit.framework */,
 				59FC6BBE14ACD8AF007B11E1 /* Foundation.framework */,
@@ -195,8 +288,10 @@
 		59FC6BC214ACD8AF007B11E1 /* Cactus */ = {
 			isa = PBXGroup;
 			children = (
-				59FC6BCB14ACD8AF007B11E1 /* AppDelegate.h */,
-				59FC6BCC14ACD8AF007B11E1 /* AppDelegate.m */,
+				5924B9DA14B00DF900D0D0C7 /* Delegate */,
+				79E892B114B05B0200C83D17 /* Root View */,
+				79E8926714B0466700C83D17 /* Weather */,
+				79E892AF14B05AF200C83D17 /* Images */,
 				5924B9D614B00D5800D0D0C7 /* FB Friend List */,
 				5924B9D814B00D7600D0D0C7 /* Service */,
 				5924B9D914B00D8400D0D0C7 /* Data Store */,
@@ -239,6 +334,7 @@
 		59FC6BF114ACD922007B11E1 /* External Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79E8927114B0466F00C83D17 /* Weather API */,
 				59FC6C1714ACD93E007B11E1 /* Facebook SDK */,
 				59FC6BFD14ACD922007B11E1 /* JSON */,
 			);
@@ -282,6 +378,97 @@
 				59FC6BFC14ACD922007B11E1 /* FBRequest.m */,
 			);
 			name = "Facebook SDK";
+			sourceTree = "<group>";
+		};
+		79E8926714B0466700C83D17 /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				79E8926814B0466700C83D17 /* ICB_WeatherConditions.h */,
+				79E8926914B0466700C83D17 /* ICB_WeatherConditions.m */,
+				79E8926A14B0466700C83D17 /* LocalWeatherViewController.h */,
+				79E8926B14B0466700C83D17 /* LocalWeatherViewController.m */,
+				79E8926C14B0466700C83D17 /* LocalWeatherViewController.xib */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		79E8927114B0466F00C83D17 /* Weather API */ = {
+			isa = PBXGroup;
+			children = (
+				79E8927214B0466F00C83D17 /* Creation */,
+				79E8927714B0466F00C83D17 /* CXMLDocument.h */,
+				79E8927814B0466F00C83D17 /* CXMLDocument.m */,
+				79E8927914B0466F00C83D17 /* CXMLDocument_PrivateExtensions.h */,
+				79E8927A14B0466F00C83D17 /* CXMLDocument_PrivateExtensions.m */,
+				79E8927B14B0466F00C83D17 /* CXMLElement.h */,
+				79E8927C14B0466F00C83D17 /* CXMLElement.m */,
+				79E8927D14B0466F00C83D17 /* CXMLElement_CreationExtensions.h */,
+				79E8927E14B0466F00C83D17 /* CXMLElement_CreationExtensions.m */,
+				79E8927F14B0466F00C83D17 /* CXMLElement_ElementTreeExtensions.h */,
+				79E8928014B0466F00C83D17 /* CXMLElement_ElementTreeExtensions.m */,
+				79E8928114B0466F00C83D17 /* CXMLNamespaceNode.h */,
+				79E8928214B0466F00C83D17 /* CXMLNamespaceNode.m */,
+				79E8928314B0466F00C83D17 /* CXMLNode.h */,
+				79E8928414B0466F00C83D17 /* CXMLNode.m */,
+				79E8928514B0466F00C83D17 /* CXMLNode_PrivateExtensions.h */,
+				79E8928614B0466F00C83D17 /* CXMLNode_PrivateExtensions.m */,
+				79E8928714B0466F00C83D17 /* CXMLNode_XPathExtensions.h */,
+				79E8928814B0466F00C83D17 /* CXMLNode_XPathExtensions.m */,
+				79E8928914B0466F00C83D17 /* LocalWeather_Prefix.pch */,
+				79E8928A14B0466F00C83D17 /* Tidy */,
+				79E8928D14B0466F00C83D17 /* TouchXML.h */,
+			);
+			path = "Weather API";
+			sourceTree = "<group>";
+		};
+		79E8927214B0466F00C83D17 /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				79E8927314B0466F00C83D17 /* CXMLDocument_CreationExtensions.h */,
+				79E8927414B0466F00C83D17 /* CXMLDocument_CreationExtensions.m */,
+				79E8927514B0466F00C83D17 /* CXMLNode_CreationExtensions.h */,
+				79E8927614B0466F00C83D17 /* CXMLNode_CreationExtensions.m */,
+			);
+			path = Creation;
+			sourceTree = "<group>";
+		};
+		79E8928A14B0466F00C83D17 /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				79E8928B14B0466F00C83D17 /* CTidy.h */,
+				79E8928C14B0466F00C83D17 /* CTidy.m */,
+			);
+			path = Tidy;
+			sourceTree = "<group>";
+		};
+		79E892AF14B05AF200C83D17 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				79E892B214B05E4B00C83D17 /* background-1.png */,
+				79E892B314B05E4B00C83D17 /* background-4.png */,
+				79E892B414B05E4B00C83D17 /* cancel-2.png */,
+				79E892B514B05E4B00C83D17 /* header.png */,
+				79E892B614B05E4B00C83D17 /* Item-1.png */,
+				79E892B714B05E4B00C83D17 /* Item-2.png */,
+				79E892B814B05E4B00C83D17 /* Item-3.png */,
+				79E892B914B05E4B00C83D17 /* pic1.png */,
+				79E892BA14B05E4B00C83D17 /* pic2.png */,
+				79E892A014B0508F00C83D17 /* sky.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		79E892B114B05B0200C83D17 /* Root View */ = {
+			isa = PBXGroup;
+			children = (
+				79E892A614B057D900C83D17 /* RootViewController.h */,
+				79E892A714B057D900C83D17 /* RootViewController.m */,
+				79E892C814B05E7100C83D17 /* RootOptionViewController.h */,
+				79E892C914B05E7100C83D17 /* RootOptionViewController.m */,
+				79E892A814B057D900C83D17 /* RootViewController.xib */,
+				79E892CA14B05E7100C83D17 /* RootOptionViewController.xib */,
+			);
+			name = "Root View";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,9 +542,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				59FC6BC714ACD8AF007B11E1 /* InfoPlist.strings in Resources */,
-				59FC6BD314ACD8AF007B11E1 /* ViewController.xib in Resources */,
+				59FC6BD314ACD8AF007B11E1 /* FBListViewController.xib in Resources */,
 				59FC6C0C14ACD922007B11E1 /* FBDialog.bundle in Resources */,
 				594EBB3714AED81500903D17 /* DetailViewController.xib in Resources */,
+				79E8926F14B0466700C83D17 /* LocalWeatherViewController.xib in Resources */,
+				79E892A114B0508F00C83D17 /* sky.png in Resources */,
+				79E892AA14B057D900C83D17 /* RootViewController.xib in Resources */,
+				79E892BB14B05E4B00C83D17 /* background-1.png in Resources */,
+				79E892BC14B05E4B00C83D17 /* background-4.png in Resources */,
+				79E892BD14B05E4B00C83D17 /* cancel-2.png in Resources */,
+				79E892BE14B05E4B00C83D17 /* header.png in Resources */,
+				79E892BF14B05E4B00C83D17 /* Item-1.png in Resources */,
+				79E892C014B05E4B00C83D17 /* Item-2.png in Resources */,
+				79E892C114B05E4B00C83D17 /* Item-3.png in Resources */,
+				79E892C214B05E4B00C83D17 /* pic1.png in Resources */,
+				79E892C314B05E4B00C83D17 /* pic2.png in Resources */,
+				79E892CC14B05E7100C83D17 /* RootOptionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +609,22 @@
 				590EEFD814ACEFCB00E86B6A /* Model.xcdatamodeld in Sources */,
 				597984F914ACFA4D0074B759 /* Friends.m in Sources */,
 				594EBB3614AED81500903D17 /* DetailViewController.m in Sources */,
+				79E8926D14B0466700C83D17 /* ICB_WeatherConditions.m in Sources */,
+				79E8926E14B0466700C83D17 /* LocalWeatherViewController.m in Sources */,
+				79E8928E14B0466F00C83D17 /* CXMLDocument_CreationExtensions.m in Sources */,
+				79E8928F14B0466F00C83D17 /* CXMLNode_CreationExtensions.m in Sources */,
+				79E8929014B0466F00C83D17 /* CXMLDocument.m in Sources */,
+				79E8929114B0466F00C83D17 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				79E8929214B0466F00C83D17 /* CXMLElement.m in Sources */,
+				79E8929314B0466F00C83D17 /* CXMLElement_CreationExtensions.m in Sources */,
+				79E8929414B0466F00C83D17 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				79E8929514B0466F00C83D17 /* CXMLNamespaceNode.m in Sources */,
+				79E8929614B0466F00C83D17 /* CXMLNode.m in Sources */,
+				79E8929714B0466F00C83D17 /* CXMLNode_PrivateExtensions.m in Sources */,
+				79E8929814B0466F00C83D17 /* CXMLNode_XPathExtensions.m in Sources */,
+				79E8929914B0466F00C83D17 /* CTidy.m in Sources */,
+				79E892A914B057D900C83D17 /* RootViewController.m in Sources */,
+				79E892CB14B05E7100C83D17 /* RootOptionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,12 +655,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		59FC6BD114ACD8AF007B11E1 /* ViewController.xib */ = {
+		59FC6BD114ACD8AF007B11E1 /* FBListViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				59FC6BD214ACD8AF007B11E1 /* en */,
 			);
-			name = ViewController.xib;
+			name = FBListViewController.xib;
 			sourceTree = "<group>";
 		};
 		59FC6BE314ACD8AF007B11E1 /* InfoPlist.strings */ = {
@@ -506,7 +722,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cactus/Cactus-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Cactus/Cactus-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -517,7 +735,9 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Cactus/Cactus-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "Cactus/Cactus-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

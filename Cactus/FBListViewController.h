@@ -33,7 +33,8 @@
 @property (nonatomic, retain) UISearchBar *searchBar;
 
 - (void) getInformation;
--(void) saveInfoWithUid:(NSString *)uid andName:(NSString *)name andBd:(NSString *)birthday andYear:(int) year;
+- (void) saveInfoWithUid:(NSString *)uid andName:(NSString *)name andBd:(NSString *)birthday andYear:(int) year;
 - (IBAction) login: (id) sender;
+- (void) goBack;
 
 @end
