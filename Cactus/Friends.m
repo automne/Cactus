@@ -11,6 +11,7 @@
 
 @implementation Friends
 
+@dynamic bdYear;
 @dynamic birthday;
 @dynamic name;
 @dynamic uid;

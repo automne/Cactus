@@ -66,9 +66,15 @@ NSString *picture;
         NSString *bd=[self.detailItem valueForKey:@"birthday"];
         if(![bd isEqualToString:@"13/00"]){
             self.birthdayLabel.text=[self.detailItem valueForKey:@"birthday"];
-        }else;
+        }else{
+            self.birthdayLabel.text=nil;
+        };
         
         self.title = [self.detailItem valueForKey:@"name"];
+        self.birthdayLabel.enabled=NO;
+        self.birthdayLabel.borderStyle=UITextBorderStyleNone;
+        self.detailDescriptionLabel.enabled=NO;
+        self.detailDescriptionLabel.borderStyle=UITextBorderStyleNone;
     }
 }
 

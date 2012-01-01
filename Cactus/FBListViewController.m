@@ -10,11 +10,13 @@
 #import "DetailViewController.h"
 
 NSDate *birthday;
+NSDate *today;
 NSDateFormatter *dateFormatter;
 NSNumberFormatter *numFormatter;
 NSString *birthdayString;
 UIImage *img;
 id temp;
+id temp_2;
 
 @interface FBListViewController ()
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
@@ -220,18 +222,23 @@ id temp;
         
             //bd
             NSString *bd=[result valueForKey:@"birthday"]; 
+            int year;
             if(bd==nil){
                 bd=@"13/00";
+                year=-2;
             }
             
             if([bd length]>=6){
+                year=[[bd substringFromIndex:6] intValue];
                 bd=[bd substringToIndex:5];
+            }else{
+                year=-1;
             }
         
             //name
             NSString *name=[result valueForKey:@"name"];
         
-            [self saveInfoWithUid:uid andName: name andBd: bd];
+            [self saveInfoWithUid:uid andName: name andBd: bd andYear:year];
         
         }else{ //friendlist
             friendList=[result valueForKey:@"data"];
@@ -292,7 +299,7 @@ id temp;
     return __fetchedResultsController;
 }  
 
--(void) saveInfoWithUid:(NSString *)uid andName:(NSString *)name andBd:(NSString *)birthday
+-(void) saveInfoWithUid:(NSString *)uid andName:(NSString *)name andBd:(NSString *)birthday andYear:(int) year
 {
     // Create a new instance of the entity managed by the fetched results controller.
     NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
@@ -314,16 +321,21 @@ id temp;
         abort();
     }
     
+    NSInteger bdYear=year;
+    NSNumber *myBDYear=[[NSNumber alloc] initWithInt:bdYear];
+    
     if(!friend){
         NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
         // If appropriate, configure the new managed object.
         [newManagedObject setValue:uid forKey:@"uid"];
         [newManagedObject setValue:name forKey:@"name"];
         [newManagedObject setValue:birthday forKey:@"birthday"];
+        [newManagedObject setValue:myBDYear forKey:@"bdYear"];
     }else{
         // Otherwise, update information for the specific object.
         [friend setValue:name forKey:@"name"];
         [friend setValue:birthday forKey:@"birthday"];
+        [friend setValue:myBDYear forKey:@"bdYear"];
     }
     
     // Save the context.
@@ -332,6 +344,7 @@ id temp;
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
+    [myBDYear release];
 
 }
 
@@ -380,6 +393,21 @@ id temp;
     NSString *temp2=[temp substringToIndex:2];
     if([temp2 intValue]!=13){
         cell.detailTextLabel.text=(NSString *)temp;
+        temp_2=[managedObject valueForKey:@"bdYear"];
+        if([temp_2 integerValue]!=-1){
+
+            today = [NSDate date];
+            dateFormatter = [[NSDateFormatter alloc] init];
+            [dateFormatter setDateFormat:@"yyyy/MM/dd"];
+            temp2=[[temp_2 stringValue] stringByAppendingFormat:@"/%@",temp];
+            birthday = [dateFormatter dateFromString:temp2];
+            [dateFormatter release];
+            NSUInteger componentFlags = NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit;
+            NSDateComponents *components = [[NSCalendar currentCalendar] components:componentFlags fromDate:birthday toDate:today options:0];
+            NSInteger bdYear = [components year];
+            cell.detailTextLabel.text=[NSString stringWithFormat:@"%i • %@", bdYear, cell.detailTextLabel.text];
+        
+        }else;
     }else{
         cell.detailTextLabel.text=@" ";
     }

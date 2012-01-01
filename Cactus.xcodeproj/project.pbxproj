@@ -67,7 +67,7 @@
 		59FC6BCA14ACD8AF007B11E1 /* Cactus-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cactus-Prefix.pch"; sourceTree = "<group>"; };
 		59FC6BCB14ACD8AF007B11E1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		59FC6BCC14ACD8AF007B11E1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		59FC6BCE14ACD8AF007B11E1 /* FBListViewController.h */ = {isa = PBXFileReference; path = FBListViewController.h; sourceTree = "<group>"; };
+		59FC6BCE14ACD8AF007B11E1 /* FBListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBListViewController.h; sourceTree = "<group>"; };
 		59FC6BCF14ACD8AF007B11E1 /* FBListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBListViewController.m; sourceTree = "<group>"; };
 		59FC6BD214ACD8AF007B11E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		59FC6BD914ACD8AF007B11E1 /* CactusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CactusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +129,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5924B9D614B00D5800D0D0C7 /* FB Friend List */ = {
+			isa = PBXGroup;
+			children = (
+				59FC6BCE14ACD8AF007B11E1 /* FBListViewController.h */,
+				59FC6BCF14ACD8AF007B11E1 /* FBListViewController.m */,
+				59FC6BD114ACD8AF007B11E1 /* ViewController.xib */,
+				594EBB3314AED81500903D17 /* DetailViewController.h */,
+				594EBB3414AED81500903D17 /* DetailViewController.m */,
+				594EBB3514AED81500903D17 /* DetailViewController.xib */,
+			);
+			name = "FB Friend List";
+			sourceTree = "<group>";
+		};
+		5924B9D814B00D7600D0D0C7 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				59FC6C1814ACD999007B11E1 /* FBRequestWrapper.h */,
+				59FC6C1914ACD999007B11E1 /* FBRequestWrapper.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		5924B9D914B00D8400D0D0C7 /* Data Store */ = {
+			isa = PBXGroup;
+			children = (
+				590EEFD614ACEFCB00E86B6A /* Model.xcdatamodeld */,
+				597984F714ACFA4D0074B759 /* Friends.h */,
+				597984F814ACFA4D0074B759 /* Friends.m */,
+			);
+			name = "Data Store";
+			sourceTree = "<group>";
+		};
 		59FC6BAD14ACD8AE007B11E1 = {
 			isa = PBXGroup;
 			children = (
@@ -165,18 +197,10 @@
 			children = (
 				59FC6BCB14ACD8AF007B11E1 /* AppDelegate.h */,
 				59FC6BCC14ACD8AF007B11E1 /* AppDelegate.m */,
-				59FC6BCE14ACD8AF007B11E1 /* FBListViewController.h */,
-				59FC6BCF14ACD8AF007B11E1 /* FBListViewController.m */,
-				59FC6BD114ACD8AF007B11E1 /* ViewController.xib */,
-				594EBB3314AED81500903D17 /* DetailViewController.h */,
-				594EBB3414AED81500903D17 /* DetailViewController.m */,
-				594EBB3514AED81500903D17 /* DetailViewController.xib */,
-				59FC6C1814ACD999007B11E1 /* FBRequestWrapper.h */,
-				59FC6C1914ACD999007B11E1 /* FBRequestWrapper.m */,
-				590EEFD614ACEFCB00E86B6A /* Model.xcdatamodeld */,
-				597984F714ACFA4D0074B759 /* Friends.h */,
-				597984F814ACFA4D0074B759 /* Friends.m */,
-				59FC6BF114ACD922007B11E1 /* Frameworks */,
+				5924B9D614B00D5800D0D0C7 /* FB Friend List */,
+				5924B9D814B00D7600D0D0C7 /* Service */,
+				5924B9D914B00D8400D0D0C7 /* Data Store */,
+				59FC6BF114ACD922007B11E1 /* External Frameworks */,
 				59FC6BC314ACD8AF007B11E1 /* Supporting Files */,
 			);
 			path = Cactus;
@@ -212,13 +236,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		59FC6BF114ACD922007B11E1 /* Frameworks */ = {
+		59FC6BF114ACD922007B11E1 /* External Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				59FC6C1714ACD93E007B11E1 /* Facebook SDK */,
 				59FC6BFD14ACD922007B11E1 /* JSON */,
 			);
-			name = Frameworks;
+			name = "External Frameworks";
 			path = src;
 			sourceTree = "<group>";
 		};

@@ -14,6 +14,7 @@
 
 -(NSString *) birthdayMonth;
 
+@property (nonatomic, retain) NSNumber * bdYear;
 @property (nonatomic, retain) NSString * birthday;
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * uid;
