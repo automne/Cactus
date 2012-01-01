@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EventViewController.h"
 #import "FBListViewController.h"
 #import "LocalWeatherViewController.h"
 
 @interface RootOptionViewController : UIViewController
 {
+    EventViewController *events;
     FBListViewController *birthdayList;
     LocalWeatherViewController *weather;
     UIViewController *superViewController;

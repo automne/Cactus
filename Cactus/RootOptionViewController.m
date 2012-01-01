@@ -35,6 +35,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    events = [[EventViewController alloc] initWithNibName:@"EventViewController" bundle:nil];
     birthdayList=[[FBListViewController alloc] initWithNibName:@"FBListViewController" bundle:nil];
     weather=[[LocalWeatherViewController alloc] init];
 }
@@ -57,7 +58,7 @@
 
 -(IBAction)toReminder:(id)sender
 {
-
+    [superViewController.navigationController pushViewController:events animated:YES];
 }
 
 - (void)viewDidUnload

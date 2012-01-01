@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		590EEFD814ACEFCB00E86B6A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 590EEFD614ACEFCB00E86B6A /* Model.xcdatamodeld */; };
+		5925523C14B0856700037139 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5925523A14B0856700037139 /* EventKit.framework */; };
+		5925523D14B0856700037139 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5925523B14B0856700037139 /* EventKitUI.framework */; };
+		5925524714B0894300037139 /* EventViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5925524514B0894300037139 /* EventViewController.m */; };
+		5925524814B0894300037139 /* EventViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5925524614B0894300037139 /* EventViewController.xib */; };
 		594EBB3614AED81500903D17 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 594EBB3414AED81500903D17 /* DetailViewController.m */; };
 		594EBB3714AED81500903D17 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594EBB3514AED81500903D17 /* DetailViewController.xib */; };
 		597984F314ACF1710074B759 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 597984F214ACF1710074B759 /* CoreData.framework */; };
@@ -82,6 +86,11 @@
 
 /* Begin PBXFileReference section */
 		590EEFD714ACEFCB00E86B6A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		5925523A14B0856700037139 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		5925523B14B0856700037139 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		5925524414B0894300037139 /* EventViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventViewController.h; sourceTree = "<group>"; };
+		5925524514B0894300037139 /* EventViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventViewController.m; sourceTree = "<group>"; };
+		5925524614B0894300037139 /* EventViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EventViewController.xib; sourceTree = "<group>"; };
 		594EBB3314AED81500903D17 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		594EBB3414AED81500903D17 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		594EBB3514AED81500903D17 /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
@@ -189,6 +198,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5925523C14B0856700037139 /* EventKit.framework in Frameworks */,
+				5925523D14B0856700037139 /* EventKitUI.framework in Frameworks */,
 				79E8929D14B046D700C83D17 /* CoreLocation.framework in Frameworks */,
 				79E8929B14B046BC00C83D17 /* MapKit.framework in Frameworks */,
 				597984F314ACF1710074B759 /* CoreData.framework in Frameworks */,
@@ -252,6 +263,16 @@
 			name = Delegate;
 			sourceTree = "<group>";
 		};
+		59C8689714B089BE004C7B4B /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				5925524414B0894300037139 /* EventViewController.h */,
+				5925524514B0894300037139 /* EventViewController.m */,
+				5925524614B0894300037139 /* EventViewController.xib */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
 		59FC6BAD14ACD8AE007B11E1 = {
 			isa = PBXGroup;
 			children = (
@@ -274,13 +295,15 @@
 		59FC6BBB14ACD8AF007B11E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				79E8929C14B046D700C83D17 /* CoreLocation.framework */,
-				79E8929A14B046BC00C83D17 /* MapKit.framework */,
 				597984F214ACF1710074B759 /* CoreData.framework */,
-				59FC6BBC14ACD8AF007B11E1 /* UIKit.framework */,
-				59FC6BBE14ACD8AF007B11E1 /* Foundation.framework */,
 				59FC6BC014ACD8AF007B11E1 /* CoreGraphics.framework */,
+				79E8929C14B046D700C83D17 /* CoreLocation.framework */,
+				5925523A14B0856700037139 /* EventKit.framework */,
+				5925523B14B0856700037139 /* EventKitUI.framework */,
+				59FC6BBE14ACD8AF007B11E1 /* Foundation.framework */,
+				79E8929A14B046BC00C83D17 /* MapKit.framework */,
 				59FC6BDA14ACD8AF007B11E1 /* SenTestingKit.framework */,
+				59FC6BBC14ACD8AF007B11E1 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -289,6 +312,7 @@
 			isa = PBXGroup;
 			children = (
 				5924B9DA14B00DF900D0D0C7 /* Delegate */,
+				59C8689714B089BE004C7B4B /* Events */,
 				79E892B114B05B0200C83D17 /* Root View */,
 				79E8926714B0466700C83D17 /* Weather */,
 				79E892AF14B05AF200C83D17 /* Images */,
@@ -558,6 +582,7 @@
 				79E892C214B05E4B00C83D17 /* pic1.png in Resources */,
 				79E892C314B05E4B00C83D17 /* pic2.png in Resources */,
 				79E892CC14B05E7100C83D17 /* RootOptionViewController.xib in Resources */,
+				5925524814B0894300037139 /* EventViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,6 +650,7 @@
 				79E8929914B0466F00C83D17 /* CTidy.m in Sources */,
 				79E892A914B057D900C83D17 /* RootViewController.m in Sources */,
 				79E892CB14B05E7100C83D17 /* RootOptionViewController.m in Sources */,
+				5925524714B0894300037139 /* EventViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

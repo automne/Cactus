@@ -63,7 +63,7 @@ id temp_2;
     if(![wrapper.facebook isSessionValid]){
         loginButton.title=@"Login";
     }
-    self.searchBar.tintColor=[UIColor blackColor];
+    self.searchBar.tintColor=[UIColor darkGrayColor];
     CGPoint offset= {0, 44};
     [self.tableView setContentOffset:offset];
     /*
