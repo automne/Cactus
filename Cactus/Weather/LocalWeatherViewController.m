@@ -2,8 +2,8 @@
 //  LocalWeatherViewController.m
 //  LocalWeather
 //
-//  Created by Matt Tuzzolo on 8/30/10.
-//  Copyright iCodeBlog LLC 2010. All rights reserved.
+//  Created by Automne on 12/30/11.
+//  Copyright (c) 2011 Automne. All rights reserved.
 //
 
 #import "LocalWeatherViewController.h"

@@ -2,8 +2,8 @@
 //  RootOptionViewController.m
 //  Cactus
 //
-//  Created by nthu on 12/1/1.
-//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
+//  Created by Automne on 12/1/1.
+//  Copyright (c) 2012 Automne. All rights reserved.
 //
 
 #import "RootOptionViewController.h"

@@ -2,8 +2,8 @@
 //  EventViewController.m
 //  Cactus
 //
-//  Created by Chen-Yu Hsu on 1/1/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//  Created by Automne on 1/1/12.
+//  Copyright (c) 2012 Automne. All rights reserved.
 //
 
 #import "EventViewController.h"

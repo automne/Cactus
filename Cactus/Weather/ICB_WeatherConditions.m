@@ -2,8 +2,8 @@
 //  ICB_WeatherConditions.m
 //  LocalWeather
 //
-//  Created by Matt Tuzzolo on 9/28/10.
-//  Copyright 2010 iCodeBlog. All rights reserved.
+//  Created by Automne on 12/30/11.
+//  Copyright (c) 2011 Automne. All rights reserved.
 //
 
 #import "ICB_WeatherConditions.h"
