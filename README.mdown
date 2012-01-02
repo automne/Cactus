@@ -8,8 +8,8 @@
 	- 徐丞裕
 
 
-##### This is an Xcode Project which means you'll need a Mac and an iDevice to run.
+##### This is an Xcode Project which means you'll need a Mac and an iDevice to run.  
 
-##### Note that the base SDK of this project is iOS SDK 5.0 .
+##### Note that the base SDK of this project is iOS SDK 5.0 .  
 
 ###### Copyright © 2012 Automne-NTHU. All Rights Reserved.
